@@ -38,7 +38,7 @@ def all_family():
 def get_member(id):
     member = jackson_family.get_member(id)
     if member: 
-        return jsonify(member),200
+        return jsonify(member), 200
     return jsonify({
         'message': 'Miembro no encontrado.'
         }) , 404

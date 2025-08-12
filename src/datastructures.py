@@ -55,14 +55,14 @@ class FamilyStructure:
     def get_member(self, id):
         for member in self._members:
             if id == member["id"]:
-                return member, 200
+                return member
         return None    
 
     def delete_member(self, id):
         member = self.get_member(id)
         if member:
             self._members.remove(member)
-            return {"Done": True}
+            return {"done": True}
         return False
 
 
